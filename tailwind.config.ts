@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
@@ -21,6 +22,10 @@ const config: Config = {
       minHeight: {
         18: "4.5rem",
       },
+      padding: {
+        18: "4.5rem",
+        34: "8.5rem",
+      },
       transitionDuration: {
         "emphasized-accelerate": "200ms",
         "emphasized-decelerate": "400ms",
@@ -38,7 +43,15 @@ const config: Config = {
       lg: "907.5px",
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addComponents }) => ({
+      addComponents: addComponents({
+        ".text-body": {},
+        ".text-H1-H2": {},
+        ".text-H4": {},
+      }),
+    })),
+  ],
 };
 
 export default config;
