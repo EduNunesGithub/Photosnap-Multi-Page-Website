@@ -27,6 +27,7 @@ const config: Config = {
         30: "7.5rem",
       },
       maxWidth: {
+        100: "25rem",
         "page-container": "69.375rem",
       },
       minHeight: {
@@ -35,6 +36,7 @@ const config: Config = {
       },
       padding: {
         18: "4.5rem",
+        17: "4.25rem",
         34: "8.5rem",
       },
       transitionDuration: {

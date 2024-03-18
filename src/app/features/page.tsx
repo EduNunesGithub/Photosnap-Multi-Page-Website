@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { Banner } from "@/components/Banner/Banner";
 import { Features as FeaturesComponent } from "@/components/Features/Features";
+import { GetAnInvite } from "@/components/GetAnInvite/GetAnInvite";
 import JPEGFeaturesHero from "#/JPEG/features-hero.jpg";
 
 const Features = () => (
@@ -43,6 +44,10 @@ const Features = () => (
       <div className="sm:flex sm:max-w-page-container sm:mx-auto sm:w-full">
         <FeaturesComponent.Features />
       </div>
+    </section>
+
+    <section className="sm:flex sm:w-full">
+      <GetAnInvite />
     </section>
   </main>
 );
