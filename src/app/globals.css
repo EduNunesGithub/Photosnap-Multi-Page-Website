@@ -83,6 +83,10 @@
   outline-width: 0.125rem;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 @media (max-width: 375px) {
   html {
     font-size: 4.2666vw;
