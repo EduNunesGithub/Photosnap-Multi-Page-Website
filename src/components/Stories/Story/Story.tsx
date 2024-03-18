@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { Story as StoryType } from "@/shared/types/types";
-import PP from "#/PNG/placeholder.png";
 
 export type StoryProps = StoryType & {
   showDate?: boolean;

@@ -16,8 +16,14 @@ const config: Config = {
       fontFamily: {
         "dm-sans": "var(--font-dm-sans)",
       },
+      height: {
+        18: "4.5rem",
+      },
       inset: {
         18: "4.5rem",
+      },
+      margin: {
+        30: "7.5rem",
       },
       maxWidth: {
         "page-container": "69.375rem",
@@ -39,6 +45,9 @@ const config: Config = {
         "emphasized-accelerate": "cubic-bezier(0.3, 0.0, 0.8, 0.15)",
         "emphasized-decelerate": "cubic-bezier(0.05, 0.7, 0.1, 1.0)",
         standard: "cubic-bezier(0.2, 0.0, 0, 1.0)",
+      },
+      width: {
+        18: "4.5rem",
       },
     },
     screens: {

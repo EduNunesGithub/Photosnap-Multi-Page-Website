@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import { Features } from "@/components/Features/Features";
 import { Banner } from "@/components/Banner/Banner";
 import { Stories } from "@/components/Stories/Stories";
 import JPEGBeautifulStories from "#/JPEG/beautiful-stories.jpg";
@@ -93,9 +94,22 @@ const Home = () => (
       </div>
     </section>
 
-    <section className="sm:flex sm:flex-col sm:w-full">
+    <section
+      className={twMerge("sm:flex sm:flex-col sm:mb-20 sm:w-full", "md:mb-30")}
+    >
       <div className="sm:flex sm:flex-col sm:items-center sm:max-w-[90rem] sm:mx-auto sm:w-full">
         <Stories.Home />
+      </div>
+    </section>
+
+    <section
+      className={twMerge(
+        "sm:flex sm:mb-20 sm:px-8 sm:w-full",
+        "md:mb-30 md:px-10",
+      )}
+    >
+      <div className="sm:flex sm:max-w-page-container sm:mx-auto sm:w-full">
+        <Features.Home />
       </div>
     </section>
   </main>
