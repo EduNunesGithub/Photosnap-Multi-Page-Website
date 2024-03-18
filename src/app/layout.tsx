@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { DM_Sans } from "next/font/google";
 import { Header } from "@/components/Header/Header";
 import "@/app/globals.css";
@@ -26,6 +26,8 @@ export default function RootLayout({
         <Header />
 
         {children}
+
+        <SpeedInsights />
       </body>
     </html>
   );

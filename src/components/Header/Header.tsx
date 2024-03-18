@@ -9,7 +9,7 @@ import SVGLogo from "#/SVG/logo.svg";
 export const Header = () => (
   <header
     className={twMerge(
-      "sm:bg-pure-white sm:flex sm:px-6 sm:w-full",
+      "sm:bg-pure-white sm:flex sm:px-6 sm:sticky sm:top-0 sm:w-full sm:z-10",
       "md:px-10",
     )}
   >
