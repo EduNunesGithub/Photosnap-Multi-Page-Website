@@ -13,6 +13,7 @@ const Home = () => (
         <div className="sm:bg-pure-black sm:flex sm:justify-center sm:w-full">
           <Banner
             articleProps={{ className: twMerge("sm:max-w-[90rem]") }}
+            decoration
             imageProps={{
               alt: "A beautiful sunset over a calm ocean with vibrant orange and pink hues reflecting on the water.",
               loading: "eager",

@@ -21,6 +21,7 @@ const config: Config = {
       },
       inset: {
         18: "4.5rem",
+        34: "8.5rem",
       },
       margin: {
         30: "7.5rem",
@@ -59,6 +60,7 @@ const config: Config = {
   plugins: [
     plugin(({ addBase, addComponents }) => ({
       addComponents: addComponents({
+        ".banner-gradient": {},
         ".story-gradient": {},
         ".story-gradient-decoration": {},
         ".text-body": {},

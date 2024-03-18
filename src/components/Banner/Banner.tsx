@@ -7,13 +7,16 @@ import { Paragraph } from "@/components/Banner/Paragraph/Paragraph";
 
 export type BannerProps = React.HTMLAttributes<HTMLDivElement> & {
   articleProps?: React.HTMLAttributes<HTMLElement>;
+  decoration?: boolean;
   direction?: "normal" | "reversed";
   imageProps: ImageProps;
 };
 
 const Base = ({
   articleProps,
+  children,
   className,
+  decoration = false,
   direction = "normal",
   imageProps,
   ...props
@@ -49,14 +52,25 @@ const Base = ({
     <div
       {...props}
       className={twMerge(
-        "sm:bg-pure-black sm:flex sm:flex-col sm:gap-4 sm:px-8 sm:py-18 sm:text-white sm:w-full",
+        "sm:bg-pure-black sm:flex sm:flex-col sm:gap-4 sm:px-8 sm:py-18 sm:relative sm:text-white sm:w-full",
         "md:gap-5 md:px-14 md:py-34",
         "lg:px-28",
         direction === "normal" && "md:order-1",
         direction === "reversed" && "md:order-2",
         className,
       )}
-    />
+    >
+      {children}
+
+      {decoration === true && (
+        <div
+          className={twMerge(
+            "sm:absolute sm:banner-gradient sm:h-[0.375rem] sm:max-w-32 sm:top-0 sm:w-full",
+            "md:bottom-34 md:h-auto md:left-0 md:top-34 md:w-[0.375rem]",
+          )}
+        />
+      )}
+    </div>
   </article>
 );
 
