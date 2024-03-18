@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { Banner } from "@/components/Banner/Banner";
+import { Stories } from "@/components/Stories/Stories";
 import JPEGBeautifulStories from "#/JPEG/beautiful-stories.jpg";
 import JPEGCreateAndShare from "#/JPEG/create-and-share.jpg";
 import JPEGDesignedForEveryone from "#/JPEG/designed-for-everyone.jpg";
@@ -89,6 +90,12 @@ const Home = () => (
             </Banner.Link>
           </Banner>
         </div>
+      </div>
+    </section>
+
+    <section className="sm:flex sm:flex-col sm:w-full">
+      <div className="sm:flex sm:flex-col sm:items-center sm:max-w-[90rem] sm:mx-auto sm:w-full">
+        <Stories.Home />
       </div>
     </section>
   </main>

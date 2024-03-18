@@ -5,6 +5,9 @@ const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      borderWidth: {
+        1: "0.0625rem",
+      },
       colors: {
         "light-grey": "#DFDFDF",
         "pure-black": "#000000",
@@ -21,6 +24,7 @@ const config: Config = {
       },
       minHeight: {
         18: "4.5rem",
+        125: "31.25rem",
       },
       padding: {
         18: "4.5rem",
@@ -44,10 +48,13 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(({ addComponents }) => ({
+    plugin(({ addBase, addComponents }) => ({
       addComponents: addComponents({
+        ".story-gradient": {},
+        ".story-gradient-decoration": {},
         ".text-body": {},
         ".text-H1-H2": {},
+        ".text-H3": {},
         ".text-H4": {},
       }),
     })),
