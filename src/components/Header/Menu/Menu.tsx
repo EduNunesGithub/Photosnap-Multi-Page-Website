@@ -3,11 +3,17 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Menu as LucideMenu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { Link } from "@/components/Header/Link/Link";
 
 export const Menu = () => {
   const [open, setOpen] = React.useState<boolean>(false);
+  const pathname = usePathname();
+
+  React.useLayoutEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <div className={twMerge("sm:flex sm:h-fit sm:w-fit", "md:hidden")}>
