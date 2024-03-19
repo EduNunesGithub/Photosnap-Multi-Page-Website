@@ -37,6 +37,7 @@ const config: Config = {
       padding: {
         18: "4.5rem",
         17: "4.25rem",
+        23: "5.75rem",
         34: "8.5rem",
       },
       transitionDuration: {
@@ -67,6 +68,7 @@ const config: Config = {
         ".story-gradient-decoration": {},
         ".text-body": {},
         ".text-H1-H2": {},
+        ".text-H1-H2-desktop": {},
         ".text-H3": {},
         ".text-H4": {},
       }),
