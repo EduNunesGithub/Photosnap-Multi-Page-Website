@@ -47,6 +47,16 @@ export const Story = ({
 
       <div className="sm:flex sm:flex-col sm:gap-4 sm:w-full sm:z-10">
         <div className="sm:flex sm:flex-col sm:gap-1 sm:w-full">
+          {showDate === true && (
+            <span className="sm:font-dm-sans sm:font-normal sm:text-[0.8125rem] sm:leading-[1.0625rem]">
+              {date.toLocaleDateString("en-US", {
+                day: "2-digit",
+                month: "long",
+                year: "numeric",
+              })}
+            </span>
+          )}
+
           <h3 className="text-H3">{name}</h3>
 
           <span className="sm:font-dm-sans sm:font-normal sm:text-[0.8125rem] sm:leading-[1.0625rem]">
