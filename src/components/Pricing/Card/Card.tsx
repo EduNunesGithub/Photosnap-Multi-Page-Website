@@ -62,7 +62,8 @@ export const Card = ({
       <Link
         {...linkProps}
         className={twMerge(
-          "sm:bg-pure-black sm:flex sm:h-10 sm:items-center sm:justify-center sm:text-H4 sm:w-full",
+          "sm:bg-pure-black sm:duration-standard sm:ease-standard sm:flex sm:h-10 sm:items-center sm:justify-center sm:text-H4 sm:transition-colors sm:w-full",
+          "sm:hover:bg-light-grey sm:hover:text-pure-black",
           dark === true && "sm:bg-pure-white",
         )}
       >
