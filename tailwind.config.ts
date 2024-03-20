@@ -52,6 +52,7 @@ const config: Config = {
       },
       width: {
         18: "4.5rem",
+        35: "8.75rem",
       },
     },
     screens: {

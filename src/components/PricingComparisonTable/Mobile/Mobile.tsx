@@ -32,32 +32,32 @@ export const Mobile = () => (
 
       <Row
         title="EMBEDDING CUSTOM CONTENT"
-        values={[true, true, true]}
+        values={[false, true, true]}
       />
 
       <Row
         title="CUSTOMIZE METADATA"
-        values={[true, true, true]}
+        values={[false, true, true]}
       />
 
       <Row
         title="ADVANCED METRICS"
-        values={[true, true, true]}
+        values={[false, false, true]}
       />
 
       <Row
         title="PHOTO DOWNLOADS"
-        values={[true, true, true]}
+        values={[false, false, true]}
       />
 
       <Row
         title="SEARCH ENGINE INDEXING"
-        values={[true, true, true]}
+        values={[false, false, true]}
       />
 
       <Row
         title="CUSTOM ANALYTICS"
-        values={[true, true, true]}
+        values={[false, false, true]}
       />
     </tbody>
   </table>
