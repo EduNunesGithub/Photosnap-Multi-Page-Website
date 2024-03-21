@@ -27,6 +27,7 @@ const config: Config = {
         30: "7.5rem",
       },
       maxWidth: {
+        98: "24.5rem",
         100: "25rem",
         "page-container": "69.375rem",
       },
@@ -38,6 +39,7 @@ const config: Config = {
         18: "4.5rem",
         17: "4.25rem",
         23: "5.75rem",
+        30: "7.5rem",
         34: "8.5rem",
       },
       transitionDuration: {

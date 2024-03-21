@@ -80,7 +80,7 @@ export const Menu = () => {
             leaveFrom={twMerge("sm:opacity-100")}
             leaveTo={twMerge("sm:opacity-0")}
           >
-            <div className="sm:fixed sm:flex sm:items-center sm:justify-end sm:min-h-18 sm:px-6 sm:top-0 sm:w-full">
+            <div className="sm:fixed sm:flex sm:items-center sm:justify-end sm:min-h-18 sm:px-8 sm:top-0 sm:w-full">
               <button
                 aria-label="Close navigation menu"
                 className="sm:flex sm:h-5 sm:rounded sm:text-pure-black sm:w-5"
