@@ -24,6 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="7QqrJtTqCYhrwIwGJY9y0ntv6SYvfXDNoD6ctJiGayg"
+        />
+      </head>
+
       <body className={DMSans.variable}>
         <Header />
 
