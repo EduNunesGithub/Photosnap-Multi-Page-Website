@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://frontendphotosnap.vercel.app
-
-# Sitemaps
-Sitemap: https://frontendphotosnap.vercel.app/sitemap.xml
