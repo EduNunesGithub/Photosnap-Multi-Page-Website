@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   generateRobotsTxt: true,
-  outDir: "src/app",
+  outDir: "public",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
   sitemapSize: 5000,
 };
