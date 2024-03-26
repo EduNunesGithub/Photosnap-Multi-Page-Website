@@ -24,6 +24,8 @@ const config: Config = {
         34: "8.5rem",
       },
       margin: {
+        18: "4.5rem",
+        21: "5.25rem",
         30: "7.5rem",
       },
       maxWidth: {
