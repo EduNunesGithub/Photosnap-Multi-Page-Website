@@ -46,8 +46,10 @@ const Features = () => (
       </div>
     </section>
 
-    <section className="sm:flex sm:w-full">
-      <GetAnInvite />
+    <section className="sm:bg-pure-black sm:flex sm:w-full">
+      <div className="sm:flex sm:max-w-[90rem] sm:mx-auto sm:w-full">
+        <GetAnInvite />
+      </div>
     </section>
   </main>
 );
