@@ -7,7 +7,7 @@ import JPEGCreateAndShare from "#/JPEG/create-and-share.jpg";
 import JPEGDesignedForEveryone from "#/JPEG/designed-for-everyone.jpg";
 
 const Home = () => (
-  <main className="sm:flex sm:flex-col sm:w-full sm:z-0">
+  <main className="sm:flex sm:flex-col sm:h-full sm:w-full sm:z-0">
     <section className="sm:flex sm:flex-col sm:w-full">
       <div className="sm:flex sm:flex-col sm:items-center sm:mx-auto sm:w-full">
         <div className="sm:bg-pure-black sm:flex sm:justify-center sm:w-full">

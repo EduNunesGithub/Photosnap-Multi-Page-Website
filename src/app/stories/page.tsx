@@ -3,7 +3,7 @@ import { Stories as StoriesComponent } from "@/components/Stories/Stories";
 import JPEGMoonOfAppalacia from "#/JPEG/moon-of-appalacia.jpg";
 
 const Stories = () => (
-  <main className="sm:flex sm:flex-col sm:w-full">
+  <main className="sm:flex sm:flex-col sm:h-full sm:w-full">
     <section className="sm:bg-pure-black sm:flex sm:w-full">
       <div className="sm:flex sm:max-w-[90rem] sm:mx-auto sm:w-full">
         <StoriesComponent.Banner

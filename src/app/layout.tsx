@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { DM_Sans } from "next/font/google";
+import { twMerge } from "tailwind-merge";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
 import "@/app/globals.css";
@@ -32,7 +33,12 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={DMSans.variable}>
+      <body
+        className={twMerge(
+          DMSans.variable,
+          "sm:grid sm:grid-cols-1 sm:grid-rows-[auto_1fr_auto] sm:min-h-dvh sm:w-full",
+        )}
+      >
         <Header />
 
         {children}

@@ -6,7 +6,7 @@ import { PricingComparisonTable } from "@/components/PricingComparisonTable/Pric
 import JPEGPricingHero from "#/JPEG/pricing-hero.jpg";
 
 const Pricing = () => (
-  <main className="sm:flex sm:flex-col sm:w-full">
+  <main className="sm:flex sm:flex-col sm:h-full sm:w-full">
     <section
       className={twMerge(
         "sm:bg-pure-black sm:flex sm:flex-col sm:mb-16 sm:w-full",

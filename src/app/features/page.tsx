@@ -5,7 +5,7 @@ import { GetAnInvite } from "@/components/GetAnInvite/GetAnInvite";
 import JPEGFeaturesHero from "#/JPEG/features-hero.jpg";
 
 const Features = () => (
-  <main className="sm:flex sm:flex-col sm:w-full">
+  <main className="sm:flex sm:flex-col sm:h-full sm:w-full">
     <section
       className={twMerge(
         "sm:bg-pure-black sm:flex sm:flex-col sm:mb-16 sm:w-full",
